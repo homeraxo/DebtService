@@ -1,0 +1,6 @@
+@DebtService_HostAddress = http://localhost:5039
+
+GET {{DebtService_HostAddress}}/health/
+Accept: application/json
+
+###
