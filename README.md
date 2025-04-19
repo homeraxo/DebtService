@@ -55,3 +55,5 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 
    - 01 - Create Table.sql
    - 02 - Insert Data.sql
+  
+http://localhost:32772/swagger/index.html
