@@ -48,8 +48,6 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 
 2. Docker
 
-   docker build -t debtservice .
-   docker run -p 8080:8080 debtservice
    docker-compose up --build
 
 4. Base de datos
