@@ -44,3 +44,9 @@ Servicio RESTful en .NET 8 que permite consultar el historial de deudas y compor
    ```bash
    git clone https://github.com/tu_usuario/DebtService.git
    cd DebtService
+
+
+   Docker
+
+   docker build -t debtservice .
+   docker run -p 8080:8080 debtservice
