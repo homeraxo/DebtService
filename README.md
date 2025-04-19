@@ -1,6 +1,6 @@
 # DebtService
 
-Servicio RESTful en .NET 8 C# que permite consultar el historial de deudas y comportamiento financiero de los usuarios de la plataforma Watts by Vemo. Incluye autenticación por email con JWT, endpoints de consulta de billetera, transacciones y métricas de deuda, y un health check.
+Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el historial de deudas y comportamiento financiero de los usuarios de la plataforma Watts by Vemo. Incluye autenticación por email con JWT, endpoints de consulta de billetera, transacciones y métricas de deuda, y un health check.
 
 ---
 
