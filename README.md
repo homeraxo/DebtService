@@ -1,6 +1,6 @@
 # DebtService
 
-Servicio RESTful en .NET 8 que permite consultar el historial de deudas y comportamiento financiero de los usuarios de la plataforma Watts. Incluye autenticación por email con JWT, endpoints de consulta de billetera, transacciones y métricas de deuda, y un health check.
+Servicio RESTful en .NET 8 C# que permite consultar el historial de deudas y comportamiento financiero de los usuarios de la plataforma Watts by Vemo. Incluye autenticación por email con JWT, endpoints de consulta de billetera, transacciones y métricas de deuda, y un health check.
 
 ---
 
@@ -46,7 +46,12 @@ Servicio RESTful en .NET 8 que permite consultar el historial de deudas y compor
    cd DebtService
 
 
-   Docker
+2. Docker
 
    docker build -t debtservice .
    docker run -p 8080:8080 debtservice
+
+3. Base de datos
+
+   - 01 - Create Table.sql
+   - 02 - Insert Data.sql
