@@ -42,7 +42,7 @@ Servicio RESTful en .NET 8 que permite consultar el historial de deudas y compor
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/DebtService.git
+   git clone https://github.com/homeraxo/DebtService.git
    cd DebtService
 
 
