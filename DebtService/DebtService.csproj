@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="BaseDatos\" />
+    <Folder Include="DataBase\" />
   </ItemGroup>
 
 </Project>
