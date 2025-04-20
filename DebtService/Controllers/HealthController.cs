@@ -9,7 +9,7 @@ namespace DebtService.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new { status = "Service is running" });
+            return Ok(new { status = "Servicio corriendo" });
         }
     }
 }
