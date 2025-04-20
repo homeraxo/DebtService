@@ -27,7 +27,7 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 - **Capa de presentación:** Controladores con validación y seguridad JWT
 - **Capa de aplicación:** Servicios que encapsulan la lógica de negocio
 - **Capa de infraestructura:** EF Core con Pomelo para acceso a datos
-- **Base de datos:** MySQL con migraciones automáticas vía `dotnet ef`
+- **Base de datos:** MySQL
   ![imagen](https://github.com/user-attachments/assets/c627297f-6c8b-47d9-add5-21d4ce6da225)
 
 ---
