@@ -29,7 +29,7 @@ namespace DebtService.Tests.Services
             var context = GetDbContext();
 
             var user = new User { UserId = 1, Fullname = "Juan Pérez", Email = "juan.perez@example.com" };
-            var wallet = new Wallet { WalletId = 1, UserId = 1 };
+            var wallet = new Wallet { WalletId = 1, UserId = 1, Status = "Activa"};
             var events = new List<DebtEvent>
             {
                 new DebtEvent { WalletId = 1, StartDate = DateTime.Now.AddDays(-4), EndDate = DateTime.Now.AddDays(-2), DurationHours = 48 },
@@ -50,6 +50,13 @@ namespace DebtService.Tests.Services
             Assert.NotNull(result);
             //Assert.Equal(2, result.TimesInDebt);
             //Assert.Equal(48, result.AverageResolutionTimeHours); // promedio exacto
+
+            //var responseObj = result.Value;
+            //var TimesInDebtProperty = responseObj.GetType().GetProperty("TimesInDebt") ??
+            //                     responseObj.GetType().GetProperty("timesindebt");
+
+            //Assert.NotNull(statusProperty);
+            //var statusValue = statusProperty.GetValue(responseObj);
         }
 
         [Fact]
