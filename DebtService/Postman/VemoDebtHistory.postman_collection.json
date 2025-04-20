@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "ff3e435a-f977-4169-acb9-c24cd7fc5bf6",
+		"name": "VemoDebtHistory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15120044",
+		"_collection_link": "https://masters-8882.postman.co/workspace/Masters-Workspace~4c6a2275-f2f0-4157-8917-274cdfd19f90/collection/15120044-ff3e435a-f977-4169-acb9-c24cd7fc5bf6?action=share&source=collection_link&creator=15120044"
+	},
+	"item": [
+		{
+			"name": "auth/token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"pm.environment.set(\"token\", jsonData.token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"{{email}}\" //\"juan.perez@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5039/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5039",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5039/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5039",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debt-indicators",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5039/debt-indicators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5039",
+					"path": [
+						"debt-indicators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-wallet-by-email",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5039/get-wallet-by-email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5039",
+					"path": [
+						"get-wallet-by-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-current-balance",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5039/get-current-balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5039",
+					"path": [
+						"get-current-balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-transaction-history",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5039/get-transaction-history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5039",
+					"path": [
+						"get-transaction-history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
