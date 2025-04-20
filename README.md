@@ -18,6 +18,7 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 - 📦 Docker y Docker Compose para orquestación
 - 🧪 Tests Unitarios
 - 📄 Documentación con Swagger
+- 📄 Documentación con Postman
 
 ---
 
