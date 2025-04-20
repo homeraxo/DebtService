@@ -59,6 +59,6 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 
     - https://masters-8882.postman.co/workspace/Masters-Workspace~4c6a2275-f2f0-4157-8917-274cdfd19f90/collection/15120044-ff3e435a-f977-4169-acb9-c24cd7fc5bf6?action=share&creator=15120044&active-environment=15120044-efaf95c4-f133-4fbd-af65-b51bcf322ab0
 
-    - Endpoints de la API: VemoDebtHistory.postman_collection.json
+    - Endpoints de la API: DebtService.postman_collection.json
    
-    - Ambiente de variables: Vemo Debt.postman_environment.json
+    - Ambiente de variables: DebtService.postman_environment.json
