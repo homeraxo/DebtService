@@ -51,7 +51,7 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
    ```bash
    docker-compose up --build
 
-3. Abrir el explorador e ingresar la URL
+3. Abrir el explorador e ingresar la URL: 
     http://localhost:5039/swagger/index.html
   
 5. Postman dentro de la solución se encuentra la colección y las variables 
