@@ -27,7 +27,8 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 - **Capa de presentación:** Controladores con validación y seguridad JWT
 - **Capa de aplicación:** Servicios que encapsulan la lógica de negocio
 - **Capa de infraestructura:** EF Core con Pomelo para acceso a datos
-- **Base de datos:** MySQL con migraciones automáticas vía `dotnet ef`
+- **Base de datos:** MySQL: https://dbdiagram.io/d/Debt-History-67fe2a929cea640381c500c9
+  
   ![imagen](https://github.com/user-attachments/assets/c627297f-6c8b-47d9-add5-21d4ce6da225)
 
 ---
@@ -51,10 +52,12 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
    ```bash
    docker-compose up --build
 
-3. Abrir el explorador e ingresar la URL
+3. Abrir el explorador e ingresar la URL: 
     http://localhost:5039/swagger/index.html
   
-5. Postman dentro de la solución se encuentra la colección y las variables 
+5. Postman dentro de la solución se encuentra la colección y las variables
+
+    - https://masters-8882.postman.co/workspace/Masters-Workspace~4c6a2275-f2f0-4157-8917-274cdfd19f90/collection/15120044-ff3e435a-f977-4169-acb9-c24cd7fc5bf6?action=share&creator=15120044&active-environment=15120044-efaf95c4-f133-4fbd-af65-b51bcf322ab0
 
     - Endpoints de la API: VemoDebtHistory.postman_collection.json
    
