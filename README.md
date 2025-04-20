@@ -45,17 +45,15 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
    git clone https://github.com/homeraxo/DebtService.git
    cd DebtService
 
-
 2. Docker
    ```bash
    docker-compose up --build
 
-3. Abrir el explorador e ingresar la URL:
-  ```bash
-  http://localhost:5039/swagger/index.html
+3. Abrir el explorador e ingresar la URL
+    http://localhost:5039/swagger/index.html
+  
+5. Postman dentro de la solución se encuentra la colección y las variables 
 
-4. Postman dentro de la solución se encuentra la colección y las variables
-
-  Endpoints de la API: VemoDebtHistory.postman_collection.json
-  Ambiente de variables: Vemo Debt.postman_environment.json
+    - Endpoints de la API: VemoDebtHistory.postman_collection.json
    
+    - Ambiente de variables: Vemo Debt.postman_environment.json
