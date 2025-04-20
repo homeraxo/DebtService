@@ -23,7 +23,7 @@ namespace DebtService.Services
 
             if (wallet == null || wallet.DebtEvents.Count == 0)
                 return null;
-
+            // get the total number of debt events and the average hours to settle
             int totalEvents = wallet.DebtEvents.Count;
             double averageHours = wallet.DebtEvents.Average(d => d.DurationHours);
 

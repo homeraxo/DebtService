@@ -7,6 +7,7 @@ namespace DebtService.Models
         [Column("wallet_id")]
         public int WalletId { get; set; }
         [Column("user_id")]
+        //rename to vehiclelease_id
         public int UserId { get; set; }
         [Column("lease_id")]
         public int LeaseId { get; set; }
