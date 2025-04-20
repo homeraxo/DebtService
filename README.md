@@ -50,9 +50,6 @@ Servicio RESTful en .NET 8 C# ybase de datos en MySQL que permite consultar el h
 
    docker-compose up --build
 
-4. Base de datos
+4. Abrir el explorador e ingresar la URL:
 
-   - 01 - Create Table.sql
-   - 02 - Insert Data.sql
-  
-http://localhost:32772/swagger/index.html
+  http://localhost:5039/swagger/index.html
